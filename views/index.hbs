@@ -1,0 +1,156 @@
+{{!-- <h1>{{title}}</h1>
+<p>Welcome to {{title}}</p> --}}
+{{>nav}}
+
+
+  <!--/ Intro Skew Star /-->
+  <div id="home" class="intro route bg-image" style="background-image: url(img/intro-bg.jpg)">
+    <div class="overlay-itro"></div>
+    <div class="intro-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h1 class="intro-title mb-4">I am {{name}}</h1>
+          <p class="intro-subtitle"><span class="text-slider-items">{{description}}</span><strong class="text-slider"></strong></p>
+          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Intro Skew End /-->
+
+  <section id="about" class="about-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="box-shadow-full">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-sm-6 col-md-5">
+                    <div class="about-img">
+                      <img src="img/testimonial-2.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-7">
+                    <div class="about-info">
+                      <p><span class="title-s">Name: </span> <span>{{name}}</span></p>
+                      <p><span class="title-s">Profile: </span> <span>{{jobTitle}}</span></p>
+                      <p><span class="title-s">Email: </span> <span>{{email}}</span></p>
+                      <p><span class="title-s">Phone: </span> <span>(617) 557-0089</span></p>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col-md-6">
+                <div class="about-me pt-4 pt-md-0">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      About This Server
+                    </h5>
+                  </div>
+                  <p class="lead">
+                    This site is built to demonstrate my skills in the following areas
+                  </p>
+                  {{>skills}}
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--/ Section Services Star /-->
+  <section id="service" class="services-mf route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              API's
+            </h3>
+            <p class="subtitle-a">
+              Here I'm demonstrating how to use server-side rendering and how to use API's.
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        {{>services}}
+      </div>
+    </div>
+  </section>
+  <!--/ Section Services End /-->
+
+  <div class="section-counter paralax-mf bg-image" style="background-image: url(img/counters-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box counter-box pt-4 pt-md-0">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
+            </div>
+            <div class="counter-num">
+              <p class="counter">450</p>
+              <span class="counter-text">WORKS COMPLETED</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box pt-4 pt-md-0">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="ion-ios-calendar-outline"></i></span>
+            </div>
+            <div class="counter-num">
+              <p class="counter">15</p>
+              <span class="counter-text">YEARS OF EXPERIENCE</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box pt-4 pt-md-0">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="ion-ios-people"></i></span>
+            </div>
+            <div class="counter-num">
+              <p class="counter">550</p>
+              <span class="counter-text">TOTAL CLIENTS</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box pt-4 pt-md-0">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
+            </div>
+            <div class="counter-num">
+              <p class="counter">36</p>
+              <span class="counter-text">AWARD WON</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--/ Section Portfolio Star /-->
+    {{!-- {{>api}} --}}
+  <!--/ Section Portfolio End /-->
+
+  <!--/ Section Testimonials Star /-->
+  {{>testimonials}}
+
+  <!--/ Section Blog Star /-->
+  {{>posts}}
+  <!--/ Section Blog End /-->
+
+
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
