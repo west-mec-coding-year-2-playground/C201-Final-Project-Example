@@ -11,7 +11,7 @@
     "express": "~4.16.1",
     "express-handlebars": "^3.1.0",
     "faker": "^4.1.0",
-    "hbs": "~4.0.4",
+    "hbs": "~4.2.0",
     "http-errors": "~1.6.3",
     "lorem-ipsum": "^2.0.3",
     "morgan": "~1.9.1",
